@@ -27,7 +27,7 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
   - O acelerometro é calibrado com a função `int calibracaoAcelerometro(MatrixXf &X, MatrixXf data)`
     A base desenvolvida possui o sensor preso como pode ser visto na figura abaixo:
 
-      ![parte interna da Plataforma](../imagens/20200311_162249.jpg?raw=true)
+      ![parte interna da Plataforma](https://github.com/roneydua/plataformaStrapdown/blob/master/imagens/20200311_162249.jpg?raw=true)
 
     Depois de montada e fechada, o algoritmo de calibração do acelerometro precisa da tomada de dados nas seis orientações para resolver o problema de minimos quadrados. A base fechada como mostra a figura possibilita que essa tomada seja feita de forma simples.
 
