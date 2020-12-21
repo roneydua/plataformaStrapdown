@@ -27,11 +27,7 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
     Para utilizar este método é necessário coletar medidas rotacionando a plataforma. Durante a rotação estas medidas coletadas são armazenadas em uma matriz Nx3 `&dados`. Quando mais dados coletados, mais acurada costuma ser a calibração (500 medidas costumam apresentar bons resultados). `&sF` é um matriz 3x3 diagonal com os fatores de escala e `&bias` é um vetor 3x1 de bias. Quando o método falha, retorna um número negativo.
   - O acelerometro é calibrado com a função `int calibracaoAcelerometro(MatrixXf &X, MatrixXf data)`
     A base desenvolvida possui o sensor preso como pode ser visto na figura abaixo:
-
-
-        ![alt text](../imagens/20200311_162249.jpg)
-
-
+        ![](imagens/20200311_162249.jpg)
     Depois de montada e fechada, o algoritmo de calibração do acelerometro precisa da tomada de dados nas seis orientações para resolver o problema de minimos quadrados. A base fechada como mostra a figura possibilita que essa tomada seja feita de forma simples.
 
     \\left (
