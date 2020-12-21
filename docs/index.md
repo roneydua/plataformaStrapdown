@@ -16,7 +16,7 @@ Estas bibliotecas são resultados do Trabalho de Graduação de Engenharia Aeroe
 # Instação
 Para instar esses bibliotecas basta executar o comando:
 
-    `git clone https://gitlab.com/roneydua/plataformastrapdown.git`
+    git clone https://gitlab.com/roneydua/plataformastrapdown.git
 
 # Foco do programa:
 O foco destas bibliotecas é de contrução para uma plataforma strapdown de seis graus de liberdade tal que forneça:
