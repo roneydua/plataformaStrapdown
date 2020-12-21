@@ -38,7 +38,7 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
 - The quaternion attitude and Euler's angles of body.
 
 * Functionality
-The project provide:
+O projeto fornece um vetor de dimensão 4+3+3+3+3+1 = 17 floats. Na seguinte sequência:
   | Quaternions components|Euler's angles|Accelerometer|Magnetometer|Gyroscope|Elapsed time|
   |----|--|----|--------------|-----------|--------------|
   | normalized| degrees| m/s| normalized| rad/s| seconds|
