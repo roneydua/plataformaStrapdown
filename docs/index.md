@@ -29,7 +29,7 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
     A base desenvolvida possui o sensor preso como pode ser visto na figura abaixo:
 
 
-        [[file:imagens/20200311_162249.jpg]]
+        ![Alternative text describing the image](file:imagens/20200311_162249.jpg)
 
 
     Depois de montada e fechada, o algoritmo de calibração do acelerometro precisa da tomada de dados nas seis orientações para resolver o problema de minimos quadrados. A base fechada como mostra a figura possibilita que essa tomada seja feita de forma simples.
