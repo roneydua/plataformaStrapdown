@@ -1,5 +1,4 @@
 ---
-comments: true
 layout: post
 title: Projeto plataforma strapdown
 category: Projetos
