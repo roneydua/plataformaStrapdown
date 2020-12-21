@@ -40,8 +40,8 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
 * Functionality
 The project provide:
 | Quaternions components | Euler's angles | Accelerometer | Magnetometer | Gyroscope | Elapsed time |
-|:-----------------------|:----------------|:---------------|:--------------|:-----------|:--------------|
-| normalized             | degrees        | m/s           | normalized   | rad/s     | seconds     \| |
+|-----|--|--------|--------------|-----------|--------------|
+| normalized             | degrees        | m/s           | normalized   | rad/s     | seconds      |
 
 ** Calibration methods
 The sensors are calibrated with:
