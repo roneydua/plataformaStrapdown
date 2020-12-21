@@ -40,7 +40,7 @@ v1 & v2 \
 \right )
 
 
-        ![Plataforma completa ](../imagens/plataformaFechada.jpg)
+        ![Plataforma completa ](../imagens/plataformaFechada.jpg?raw=true)
 
 
 - The quaternion attitude and Euler's angles of body.
