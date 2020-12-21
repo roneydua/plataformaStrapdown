@@ -37,13 +37,13 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
 
 - The quaternion attitude and Euler's angles of body.
 
-* Functionality
+# Funcionalidade
 O projeto fornece um vetor de dimensão 4+3+3+3+3+1 = 17 floats. Na seguinte sequência:
   | Quaternions components|Euler's angles|Accelerometer|Magnetometer|Gyroscope|Elapsed time|
   |----|--|----|--------------|-----------|--------------|
   | normalized| degrees| m/s| normalized| rad/s| seconds|
 
-** Calibration methods
+# Métodos de calibração
 The sensors are calibrated with:
 - gyroscope
   - Only remove the systematic errors
@@ -54,12 +54,12 @@ The sensors are calibrated with:
 - Magnetometer
   - STMicroelectronics, (2010). Using LSM303DLH for a tilt
     compensated electronic compass.
-** Attitude estimations
+# Estimador de atitude
 The estimation use a linear Kalman filter. The states of the filter are attitude quaternion.
 
 
-* Dependencies
+# Depedencias
 This project use the EIGEN Lib.
 
 
-* About this project
+# Sobre este projeto
