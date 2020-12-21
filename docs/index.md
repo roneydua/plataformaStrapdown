@@ -32,7 +32,7 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
 
     Depois de montada e fechada, o algoritmo de calibração do acelerometro precisa da tomada de dados nas seis orientações para resolver o problema de minimos quadrados. A base fechada como mostra a figura possibilita que essa tomada seja feita de forma simples.
 
-      ![Plataforma completa](../imagens/plataformaFechada.jpg?raw=true)
+      ![Plataforma completa](../imagens/plataformaFechada.jpg)
 
 
 - The quaternion attitude and Euler's angles of body.
@@ -40,8 +40,8 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
 * Functionality
 The project provide:
 | Quaternions components | Euler's angles | Accelerometer | Magnetometer | Gyroscope | Elapsed time |
-|------------------------+----------------+---------------+--------------+-----------+--------------|
-| normalized             | degrees        | m/s           | normalized   | rad/s     | seconds      |
+|:-----------------------|:----------------|:---------------|:--------------|:-----------|:--------------|
+| normalized             | degrees        | m/s           | normalized   | rad/s     | seconds     \| |
 
 ** Calibration methods
 The sensors are calibrated with:
