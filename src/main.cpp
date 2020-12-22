@@ -1,3 +1,14 @@
+/**
+* @file main.cpp
+* @author Roney D da Silva
+* @date 22 Dec 2020
+* @copyright 2020 Roney D da Silva
+         Email: roneyddasilva@gmail.com
+* @brief O programa fornece dados campensados a partir dos metodos de
+compensacao. A atitude eh obtida com o algoritmo denominado AQUA e um filtro de
+Kalman linear.
+*/
+
 #include "../eigen/Eigen/Dense"
 #include "AT.h"
 #include "IMU.h"
@@ -10,7 +21,7 @@ TaskHandle_t comunicacao;
 
 const float dtKalman = 0.025;    // Periodo do filtro de Kalman em segundos
 const float dtTelemetria = 25.0; // Periodo para telemetria milissegundos
-// instancia da biblioteca Eigen
+// instancia da biblioteca de algebra linear Eigen
 using namespace Eigen;
 // cria vetores para armazenar as medidas dos sensores no sistema do corpo
 Vector3f acel = Vector3f::Zero(), gyro = Vector3f::Zero(),
@@ -21,6 +32,7 @@ VectorXf temp = VectorXf::Zero(4 + 3 + 3 + 3 + 3 + 1);
 IMU IMU(Wire, 0x68);
 // cria objeto para inicializar a comunicacao
 TELEMETRIA TELEMETRIA;
+// instancia a atitude
 AT AT;
 // funcao que roda dentro do loop do nucleo 0
 void estimadorCodigo(void *) {

@@ -43,23 +43,25 @@ O projeto fornece um vetor de dimensão 4+3+3+3+3+1 = 17 floats. Na seguinte seq
 |------------------------|----------------|---------------|--------------|-----------|--------------|
 | normalized             | degrees        | m/s           | normalized   | rad/s     | seconds      |
 
+## Divisão das tarefas
+O ESP-32 possui dois núcleo como capacidade de realizar operações multitarefa. Um dos núcleos executa a função `void estimadorCodigo(void *)` e  o outro a função `void comunicacaoCodigo(void *)`.
 
 # Métodos de calibração
 The sensors are calibrated with:
-- gyroscope
+- giroscopios
   - Only remove the systematic errors
-- Accelerometer
+- Acelerômetros
   - Kuncar, A., Sysel, M., & Urbanek, T. (2016). Calibration of triaxial
     accelerometer and triaxial magnetometer for tilt compensated
     electronic compass., 45–52. http://dx.doi.org/10.1007/978-3-319-33389-2_5
-- Magnetometer
+- Magnetômetros
   - STMicroelectronics, (2010). Using LSM303DLH for a tilt
     compensated electronic compass.
 
 # Estimador de atitude
-The estimation use a linear Kalman filter. The states of the filter are attitude quaternion.
+A estimação da atitude é feita com um filtro de Kalman linear e Quatérnios são utilizados para representar a atitude.
 
 # Depedencias
-This project use the EIGEN Lib.
+Este projeto utiliza a biblioteca EIGEN
 
 <!-- # Sobre este projeto -->
