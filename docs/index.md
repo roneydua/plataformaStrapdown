@@ -1,7 +1,7 @@
 ---
 # title: Projeto plataforma strapdown
-layout: post
-category: Projetos
+# layout: post
+# category: Projetos
 ---
 Obter a atitude de drones, veículos subaquáticos e outros dispositivos com 6 graus de liberdade é uma das tarefas mais desafiadoras no projeto de sistemas de controle de navegação. Por este motivo, muitos projetos utilizam programas proprietários ou limitam-se á simulações. Neste trabalho é apresentado um sistema completo para determinação de atitude capaz de fornecer medidas calibradas e atitude estimada utilizando sensores MEMS, com microcontrolador de baixo custo e baixo consumo energético. Acelerômetro e magnetômetro são calibrados online no sistema embarcado como emprego do método dos mínimos quadrados sem auxílio de equipamentos externos. O estado estimado é computado com um rápido algorítimo algébrico de quatérnios consumindo menos de 1,5ms com emprego de um filtro aditivo de Kalman linear.
 
@@ -14,7 +14,7 @@ Estas bibliotecas são resultados do Trabalho de Graduação de Engenharia Aeroe
 # Instação
 Para instar esses bibliotecas basta executar o comando:
 
-    git clone https://gitlab.com/roneydua/plataformastrapdown.git
+    git clone <https://gitlab.com/roneydua/plataformastrapdown.git>
 
 # Foco do programa:
 O foco destas bibliotecas é de contrução para uma plataforma strapdown de seis graus de liberdade tal que forneça:
