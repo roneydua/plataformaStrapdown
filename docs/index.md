@@ -8,15 +8,17 @@ Obter a atitude de drones, veículos subaquáticos e outros dispositivos com 6 g
 # Trabalho de graduação
 Estas bibliotecas são resultados do Trabalho de Graduação de Engenharia Aeroespacial
   - <https://github.com/roneydua/plataformaStrapdown/blob/master/pdfFiles/TG.pdf>
+    {% pdf "https://github.com/roneydua/plataformaStrapdown/blob/master/pdfFiles/TG.pdf" %}
 Artigo publico no Congresso Brasileiro de Automática no ano 2020.
   - <https://www.sba.org.br/open_journal_systems/index.php/sba/article/view/1155/1082>
+
 
 # Instação
 Para instar esses bibliotecas basta executar o comando:
 
-    git clone https://gitlab.com/roneydua/plataformastrapdown.git
+    git clone https://github.com/roneydua/plataformastrapdown.git
 
-Repositório disponível em: https://gitlab.com/roneydua/plataformastrapdown.git
+Repositório disponível em: https://github.com/roneydua/plataformastrapdown.git
 
 # Foco do programa:
 O foco destas bibliotecas é de contrução para uma plataforma strapdown de seis graus de liberdade tal que forneça:
