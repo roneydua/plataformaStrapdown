@@ -1,5 +1,5 @@
 ---
-title: Projeto plataforma strapdown
+# title: Projeto plataforma strapdown
 layout: post
 category: Projetos
 ---
