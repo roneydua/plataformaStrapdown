@@ -7,7 +7,7 @@ Obter a atitude de drones, veículos subaquáticos e outros dispositivos com 6 g
 
 # Trabalho de graduação
 Estas bibliotecas são resultados do Trabalho de Graduação de Engenharia Aeroespacial
-  - <https://gitlab.com/roneydua/plataformastrapdown/-/blob/master/pdfFiles/TG.pdf>
+  - <https://github.com/roneydua/plataformastrapdown/-/blob/maste/pdfFiles/TG.pdf>
   Artigo publico no Congresso Brasileiro de Automática no ano 2020.
   - <https://www.sba.org.br/open_journal_systems/index.php/sba/article/view/1155/1082>
 
@@ -56,9 +56,7 @@ The sensors are calibrated with:
 # Estimador de atitude
 The estimation use a linear Kalman filter. The states of the filter are attitude quaternion.
 
-
 # Depedencias
 This project use the EIGEN Lib.
 
-
-# Sobre este projeto
+<!-- # Sobre este projeto -->
