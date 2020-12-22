@@ -8,7 +8,7 @@ Obter a atitude de drones, veículos subaquáticos e outros dispositivos com 6 g
 # Trabalho de graduação
 Estas bibliotecas são resultados do Trabalho de Graduação de Engenharia Aeroespacial
   - <https://github.com/roneydua/plataformaStrapdown/blob/master/pdfFiles/TG.pdf>
-    {% pdf "https://github.com/roneydua/plataformaStrapdown/blob/master/pdfFiles/TG.pdf" %}
+    
 Artigo publico no Congresso Brasileiro de Automática no ano 2020.
   - <https://www.sba.org.br/open_journal_systems/index.php/sba/article/view/1155/1082>
 
