@@ -1,14 +1,12 @@
-<!---
-title: Projeto plataforma strapdown
-layout: post
-category: Projetos
---->
+Plataforma Strapdown
+====================
+
 Obter a atitude de drones, veículos subaquáticos e outros dispositivos com 6 graus de liberdade é uma das tarefas mais desafiadoras no projeto de sistemas de controle de navegação. Por este motivo, muitos projetos utilizam programas proprietários ou limitam-se á simulações. Neste trabalho é apresentado um sistema completo para determinação de atitude capaz de fornecer medidas calibradas e atitude estimada utilizando sensores MEMS, com microcontrolador de baixo custo e baixo consumo energético. Acelerômetro e magnetômetro são calibrados online no sistema embarcado como emprego do método dos mínimos quadrados sem auxílio de equipamentos externos. O estado estimado é computado com um rápido algorítimo algébrico de quatérnios consumindo menos de 1,5ms com emprego de um filtro aditivo de Kalman linear.
 
 # Trabalho de graduação
 Estas bibliotecas são resultados do Trabalho de Graduação de Engenharia Aeroespacial
   - <https://github.com/roneydua/plataformaStrapdown/blob/master/pdfFiles/TG.pdf>
-    
+
 Artigo publico no Congresso Brasileiro de Automática no ano 2020.
   - <https://www.sba.org.br/open_journal_systems/index.php/sba/article/view/1155/1082>
 
@@ -41,16 +39,21 @@ O foco destas bibliotecas é de contrução para uma plataforma strapdown de sei
 # Funcionalidade
 O projeto fornece um vetor de dimensão 4+3+3+3+3+1 = 17 floats. Na seguinte sequência:
 
-| Quaternions components | Euler's angles | Accelerometer | Magnetometer | Gyroscope | Elapsed time |
+<!-- | Quaternions components | Euler's angles | Accelerometer | Magnetometer | Gyroscope | Elapsed time |
 |------------------------|----------------|---------------|--------------|-----------|--------------|
-| normalized             | degrees        | m/s           | normalized   | rad/s     | seconds      |
+| normalized             | degrees        | m/s           | normalized   | rad/s     | seconds      | -->
+
+| Componentes do quatérnio de atitude | Ângulos de Euler | Acelerômetro | Magnetômetro | Giroscópio | Intervalo de tempo |
+|------------------------|----------------|---------------|--------------|-----------|--------------|
+| normalizado             | graus        | m/s           | normalizado   | rad/s     | segundos     |
 
 ## Divisão das tarefas
-O ESP-32 possui dois núcleo como capacidade de realizar operações multitarefa. Um dos núcleos executa a função `void estimadorCodigo(void *)` e  o outro a função `void comunicacaoCodigo(void *)`.
+O ESP-32 possui dois núcleo como capacidade de realizar operações multitarefa. Um dos núcleos executa a função `void estimadorCodigo(void *)` e  o outro a função `void comunicacaoCodigo(void *)`, o primeiro executa o  _loop_ de  estimação e o segundo comanda a telemetria.
+
 
 # Métodos de calibração
-The sensors are calibrated with:
-- giroscopios
+Os sensores são calibrados considerando:
+- giroscópios
   - Only remove the systematic errors
 - Acelerômetros
   - Kuncar, A., Sysel, M., & Urbanek, T. (2016). Calibration of triaxial
