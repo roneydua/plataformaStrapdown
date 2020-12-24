@@ -4,7 +4,7 @@
 * @date 22 Dec 2020
 * @copyright 2020 Roney D da Silva
          Email: roneyddasilva@gmail.com
-* @brief O programa fornece dados campensados a partir dos metodos de
+* @brief O programa fornece dados compensados a partir dos metodos de
 compensacao. A atitude eh obtida com o algoritmo denominado AQUA e um filtro de
 Kalman linear.
 */

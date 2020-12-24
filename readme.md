@@ -16,8 +16,6 @@ Para instar esses bibliotecas basta executar o comando:
 
     git clone https://github.com/roneydua/plataformastrapdown.git
 
-Repositório disponível em: https://github.com/roneydua/plataformastrapdown.git
-
 # Foco do programa:
 O foco destas bibliotecas é de construção para uma plataforma strapdown de seis graus de liberdade tal que forneça:
 - Dados de giroscópio, acelerômetro e magnetômetro da MPU9250 calibrados. Sendo que:
@@ -26,6 +24,7 @@ O foco destas bibliotecas é de construção para uma plataforma strapdown de se
 
     Para utilizar este método é necessário coletar medidas rotacionando a plataforma. Durante a rotação estas medidas coletadas são armazenadas em uma matriz Nx3 `&dados`. Quando mais dados coletados, mais acurada costuma ser a calibração (500 medidas costumam apresentar bons resultados). `&sF` é um matriz 3x3 diagonal com os fatores de escala e `&bias` é um vetor 3x1 de bias. Quando o método falha, retorna um número negativo.
   - O acelerômetro é calibrado com a função `int calibracaoAcelerometro(MatrixXf &X, MatrixXf data)`
+
     A base desenvolvida possui o sensor preso como pode ser visto na figura abaixo:
 
       ![parte interna da Plataforma](https://github.com/roneydua/plataformaStrapdown/blob/master/imagens/20200311_162249.jpg?raw=true)
@@ -33,8 +32,6 @@ O foco destas bibliotecas é de construção para uma plataforma strapdown de se
     Depois de montada e fechada, o algoritmo de calibração do acelerômetro precisa da tomada de dados nas seis orientações para resolver o problema de mínimos quadrados. A base fechada como mostra a figura possibilita que essa tomada seja feita de forma simples.
 
       ![Plataforma completa](https://github.com/roneydua/plataformaStrapdown/blob/master//imagens/plataformaFechada.jpg?raw=true)
-
-- The quatérnio attitude and Euler's angles of body.
 
 # Funcionalidade
 O projeto fornece um vetor de dimensão 4+3+3+3+3+1 = 17 floats. Na seguinte sequência:
@@ -67,6 +64,8 @@ Os sensores são calibrados considerando:
 A estimação da atitude é feita com um filtro de Kalman linear e Quatérnios são utilizados para representar a atitude.
 
 # Depedências
-Este projeto utiliza a biblioteca EIGEN para computa das operações de álgebra linear. Para completar a transmissão da telemetria o projeto utiliza o API [ESP-NOW](https://www.espressif.com/en/products/software/esp-now/overview) da Espressif, portando, para receber os dados outro ESP-32 deve esta conectado a um pc e com o código de  [coleta de dados da telemetria](https://github.com/roneydua/coletaPlataformaStrapdown) carregado.
+Este projeto utiliza a biblioteca [Eigen](eigen.tuxfamily.org/) (por este motivo o `#include "../eigen/Eigen/Dense"`) para computa das operações de álgebra linear. Para completar a transmissão da telemetria o projeto utiliza o API [ESP-NOW](https://www.espressif.com/en/products/software/esp-now/overview) da Espressif, portando, para receber os dados outro ESP-32 deve esta conectado a um pc e com o código de  [coleta de dados da telemetria](https://github.com/roneydua/coletaPlataformaStrapdown) carregado.
+
+
 
 <!-- # Sobre este projeto -->
