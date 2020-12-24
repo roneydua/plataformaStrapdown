@@ -32,7 +32,7 @@ O foco destas bibliotecas é de construção para uma plataforma strapdown de se
 
     Depois de montada e fechada, o algoritmo de calibração do acelerômetro precisa da tomada de dados nas seis orientações para resolver o problema de mínimos quadrados. A base fechada como mostra a figura possibilita que essa tomada seja feita de forma simples.
 
-      ![Plataforma completa](../imagens/plataformaFechada.jpg)
+      ![Plataforma completa](../imagens/plataformaFechada.jpg?raw=true)
 
 - The quatérnio attitude and Euler's angles of body.
 
